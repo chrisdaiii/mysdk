@@ -1,0 +1,10 @@
+<Project>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+  <Import Project="Custom.targets"/>
+
+  <Target Name="target1" AfterTargets="Build">
+    <Message Text="$(MessageText)" Importance="high" />
+  </Target>
+
+</Project>
